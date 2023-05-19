@@ -1,1 +1,1 @@
-# linux-setups
+# Shell Script to pre setup Linux
