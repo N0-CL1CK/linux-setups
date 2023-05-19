@@ -5,7 +5,7 @@ sudo apt update && apt upgrade
 
 
 ## Development Softwares
-sudo apt install code git sassc libglib2.0-dev-bin libglib2.0-dev libxml2-utils fonts-jetbrains-mono
+sudo apt install code git sassc libglib2.0-dev-bin libglib2.0-dev libxml2-utils chrome-gnome-shell fonts-jetbrains-mono
 sudo snap install insomnia
 sudo snap install node --classic
 
