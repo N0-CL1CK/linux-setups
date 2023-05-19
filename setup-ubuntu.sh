@@ -19,6 +19,11 @@ yes | {
   sudo snap install node --classic
 
 
+  ## Node set up
+  mkdir /home/$USER/.npm-global
+  npm config set prefix '~/.npm-global'
+
+
   ## Git set up
   if [ -f "./config.json" ]; then
     email=$(cat ./config.json | jq '.email')
@@ -33,11 +38,11 @@ yes | {
   fi
 
   ## Themes
-  git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git ~/Downloads/WhiteSur
-  chmod +x ~/Downloads/WhiteSur/install.sh
-  chmod +x ~/Downloads/WhiteSur/tweaks.sh
-  ~/Downloads/WhiteSur/install.sh -c Dark -N Mojave
-  ~/Downloads/WhiteSur/tweaks.sh -f monterey
+  git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git /home/$USER/Downloads/WhiteSur
+  chmod +x /home/$USER/Downloads/WhiteSur/install.sh
+  chmod +x /home/$USER/Downloads/WhiteSur/tweaks.sh
+  /home/$USER/Downloads/WhiteSur/install.sh -c Dark -N Mojave
+  /home/$USER/Downloads/WhiteSur/tweaks.sh -f monterey
 
 
   ## ZSH, OhMyZSH and Plugins
@@ -47,7 +52,7 @@ yes | {
 
   git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-  wget -O ~/.zshrc https://raw.githubusercontent.com/N0-CL1CK/linux-setups/main/.zshrc
+  wget -O /home/$USER/.zshrc https://raw.githubusercontent.com/N0-CL1CK/linux-setups/main/.zshrc
 
   sudo chsh -s $(which zsh)
 }
