@@ -26,3 +26,5 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 wget -O ~/.zshrc https://raw.githubusercontent.com/N0-CL1CK/linux-setups/main/.zshrc
+
+sudo chsh -s $(which zsh)
