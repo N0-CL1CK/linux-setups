@@ -1,0 +1,46 @@
+{
+    "workbench.colorTheme": "Omni",
+    "workbench.iconTheme": "symbols",
+    "workbench.productIconTheme": "fluent-icons",
+
+    "editor.fontSize": 15,
+    "editor.lineHeight": 26,
+    "editor.fontLigatures": true,
+    "editor.letterSpacing": 0.25,
+    "editor.minimap.enabled": false,
+    "editor.cursorBlinking": "phase",    
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.semanticHighlighting.enabled": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.addMissingImports": true
+    },
+
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "graphql"
+    ],
+    
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+
+    "[prisma]": { "editor.formatOnSave": true },
+
+    "javascript.suggest.autoImports": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "typescript.suggest.autoImports": true,
+
+    "emmet.syntaxProfiles": { "javascript": "jsx" },
+    "emmet.includeLanguages": { "javascript": "javascriptreact" },
+
+    "files.associations": {
+        ".sequelizerc": "javascript",
+        ".stylelintrc": "json",
+        "*.tsx": "typescriptreact",
+        ".env.*": "dotenv",
+        ".prettierrc": "json"
+    }
+}
