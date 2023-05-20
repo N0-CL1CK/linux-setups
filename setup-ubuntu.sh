@@ -22,7 +22,8 @@ yes | {
   ## Node set up
   mkdir /home/$USER/.npm-global
   npm config set prefix '~/.npm-global'
-
+  ## Precisa reinstalar o npm globalmente ou movê-lo para ~/.npm-global
+  npm install -g npm@9.6.6
 
   ## Git set up
   if [ -f "./config.json" ]; then
