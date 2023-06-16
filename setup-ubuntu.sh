@@ -10,11 +10,12 @@ fi
 
 yes | {
   ## Ubuntu default commands
-  sudo apt update && apt upgrade
+  sudo apt update && sudo apt upgrade
 
 
   ## Development Softwares
-  sudo apt install code git sassc libglib2.0-dev-bin libglib2.0-dev libxml2-utils chrome-gnome-shell gnome-tweaks fonts-jetbrains-mono jq
+  sudo apt install git sassc libglib2.0-dev-bin libglib2.0-dev libxml2-utils chrome-gnome-shell gnome-tweaks fonts-jetbrains-mono jq
+  sudo snap install code --classic
   sudo snap install insomnia
   sudo snap install node --classic
 
@@ -47,7 +48,7 @@ yes | {
 
 
   ## ZSH, OhMyZSH and Plugins
-  apt install zsh
+  sudo apt install zsh
 
   sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
