@@ -56,4 +56,8 @@ yes | {
   wget -O /home/$USER/.zshrc https://raw.githubusercontent.com/N0-CL1CK/linux-setups/main/.zshrc
 
   sudo chsh -s $(which zsh)
+
+  ## NeoVim
+  sudo apt install neovim
+  git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 }
